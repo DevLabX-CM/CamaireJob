@@ -68,4 +68,9 @@ export const jobFilterSchema = z.object({
   remote: z.coerce.boolean().optional(),
 });
 
+export const searchJobsSchema = z.object({
+  q: z.string().optional(),
+
+});
+
 export type JobFilterValues = z.infer<typeof jobFilterSchema>;
