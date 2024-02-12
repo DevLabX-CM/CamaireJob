@@ -29,7 +29,7 @@ export default function Hero({ filterValues, getTitle }: HeroProps) {
       <H1>{getTitle(filterValues)}</H1>
       <p className="text-muted-foreground">Find your dream job.</p>
       <form action={searcJobs}>
-        <div className=" mx-auto flex w-full w-[90%]  sm:w-[40%] items-center justify-between rounded-xl  border border-slate-700  px-5 py-3  focus-visible:ring-2 ">
+        <div className=" mx-auto flex w-[90%] items-center  justify-between rounded-xl border border-slate-700  px-5 py-3  focus-visible:ring-2 sm:w-full  sm:max-w-[40%] ">
           <Input
             placeholder="Seach job"
             id="q"
